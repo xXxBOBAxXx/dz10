@@ -13,8 +13,7 @@ def restart(c):
     count = 0
     for i in c:
         count += 1
-        if i == "X  ": c[count - 1] = (f'/{count}')
-        if i == "O  ": c[count - 1] = (f'/{count}')
+        if i == "X  " or "O  ": c[count - 1] = (f'/{count}')
 
             
 async def step(update: Update, context: ContextTypes.DEFAULT_TYPE):
